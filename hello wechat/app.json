@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/myPage/index",
-    "pages/dataBind/index"
+    "pages/dataBind/index",
+    "pages/event/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -31,6 +32,9 @@
     }, {
       "pagePath": "pages/dataBind/index",
       "text": "数据绑定"
+    }, {
+      "pagePath": "pages/event/index",
+      "text": "事件"
     }]
   }
 }

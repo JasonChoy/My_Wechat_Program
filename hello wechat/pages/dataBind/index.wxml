@@ -21,7 +21,7 @@
 <view wx:for="{{array}}" wx:key="{{index_key}}">{{index}} -- {{item.message}}</view>
 <!--如不提供 wx:key，会报一个 warning,如果明确知道该列表是静态，或者不必关注其顺序，可以选择忽略。-->
 <!--默认数组的当前项的下标变量名默认为index，数组当前项的变量名默认为item-->
-<view>---------------------------------------</view>
+<view>------------------模板--------------------</view>
 <template is="msgItem" data="{{...itemObj}}"/>
 
 <template name="msgItem">
