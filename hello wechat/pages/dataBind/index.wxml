@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view wx:if="{{condition}}">
+    TRUE
+  </view>
+  <view wx:else>
+    FALSE
+  </view>
+</view>
+性别:<checkbox checked="{{true}}">男 </checkbox>
+     <checkbox checked="{{false}}">女 </checkbox>
+<view style=" word-break: break-all">特别注意：不要直接写 checked="false"，其计算结果是一个字符串，转成 boolean 类型后代表真值。</view>
+<view>---------------------------------------</view>
+<template is="objectCombine" data="{{for: a, bar: b}}"></template>
+<view>---------------------------------------</view>
+<!--<view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>-->
+
+<view wx:for="{{array}}" wx:key="{{index_key}}">{{index}} -- {{item.message}}</view>
+<!--如不提供 wx:key，会报一个 warning,如果明确知道该列表是静态，或者不必关注其顺序，可以选择忽略。-->
+<!--默认数组的当前项的下标变量名默认为index，数组当前项的变量名默认为item-->
+<view>---------------------------------------</view>
+<template is="msgItem" data="{{...itemObj}}"/>
+
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>

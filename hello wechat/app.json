@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myPage/index",
+    "pages/dataBind/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "tabbar和app.json的学习",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "backgroundColor":"#333"
+  },
+  "tabBar": {
+    "color":"yellow",
+    "selectedColor":"red",
+    "backgroundColor":"#7BE1F8",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"icon/icon_seo.png",
+      "selectedIconPath":"icon/icon_seo_HL.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }, {
+      "pagePath": "pages/myPage/index",
+      "text": "页面注册"
+    }, {
+      "pagePath": "pages/dataBind/index",
+      "text": "数据绑定"
+    }]
+  }
+}

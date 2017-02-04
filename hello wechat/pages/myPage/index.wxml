@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text class="userinfo-nickname">点击下面的文字会触发绑定事件</text>
+  </view>
+  <view bindtap="viewTap" class="usermotto">
+    <text class="user-motto">{{text}}</text>
+  </view>
+</view>
